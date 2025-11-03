@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Hotels>
+	<Hotel Rating="3.6">
+		<Name>Milk Hotel</Name>
+		<Phone>602-999-9912</Phone>
+		<Phone>480-999-9912</Phone>
+		<Address>
+			<Number>1</Number>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85322</Zip>
+			<NearestAirport>Sky Harbor</NearestAirport>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.2">
+		<Name>Sunnyvale Suites</Name>
+		<Phone>602-888-8812</Phone>
+		<Address>
+			<Number>1234</Number>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85001</Zip>
+			<NearestAirport>Sky Harbor</NearestAirport>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>DogDog</Name>
+		<Phone>788-932-3002</Phone>
+		<Phone>928-932-3002</Phone>
+		<Address>
+			<Number>4321</Number>
+			<City>Flagstaff</City>
+			<State>AZ</State>
+			<Zip>86001</Zip>
+			<NearestAirport>Flagstaff Pulliam</NearestAirport>
+		</Address>
+	</Hotel>
+</Hotels>
