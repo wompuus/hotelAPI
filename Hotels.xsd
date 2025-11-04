@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://wompuus.github.io/hotelAPI"
+    elementFormDefault="qualified"
+	attributeFormDefault="unqualified"
+    xmlns="https://wompuus.github.io/hotelAPI/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   
+>
+<!--root-->
+	<xsd:element name ="Hotels">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xs:element name="Hotel" type="HotelType" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+<!--Hotel object : name is required(only 1), one or more phone #, address is required, rating attribute is optional-->
+	<xsd:complexType name ="HotelType">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xs:string"/>
+			<xsd:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element name="Address" type="AddressType"/>
+		</xsd:sequence>
+		<xsd:attribute name="Rating" type="xs:decimal" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="AddressType">
+		<xsd:sequence>
+			<xsd:element name="Number" type="xs:string"/>
+			<xsd:element name="Street" type="xs:string"/>
+			<xsd:element name="City" type="xs:string"/>
+			<xsd:element name="State" type="xs:string"/>
+			<xsd:element name="Zip" type="xs:string"/>
+			<!-- NearestAirport is optional -->
+			<xsd:element name="NearestAirport" type="xs:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
