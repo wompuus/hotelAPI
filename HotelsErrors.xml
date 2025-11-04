@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Hotel 
-  xmlns="https://wompuus.github.io/hotelAPI"
+  xmlns="https://wompuus.github.io/hotelAPI/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="https://wompuus.github.io/hotelAPI Hotels.xsd">  <!--Name is Hotel instead of Hotels:: Error #1-->
 
@@ -44,4 +44,5 @@
 		</Address>
 	</Hotel>
 </Hotel>
+
 
