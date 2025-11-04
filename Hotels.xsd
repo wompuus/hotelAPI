@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns="https://wompuus.github.io/hotelAPI/"
-           targetNamespace="https://wompuus.github.io/hotelAPI/"
+           xmlns="https://wompuus.github.io/hotelAPI"
+           targetNamespace="https://wompuus.github.io/hotelAPI"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 
